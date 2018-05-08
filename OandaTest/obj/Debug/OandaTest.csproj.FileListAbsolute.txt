@@ -1,0 +1,7 @@
+C:\Users\Lenovo\Source\Repos\OandaTest\OandaTest\bin\Debug\OandaTest.exe
+C:\Users\Lenovo\Source\Repos\OandaTest\OandaTest\bin\Debug\OandaTest.pdb
+C:\Users\Lenovo\Source\Repos\OandaTest\OandaTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lenovo\Source\Repos\OandaTest\OandaTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lenovo\Source\Repos\OandaTest\OandaTest\obj\Debug\OandaTest.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Source\Repos\OandaTest\OandaTest\obj\Debug\OandaTest.exe
+C:\Users\Lenovo\Source\Repos\OandaTest\OandaTest\obj\Debug\OandaTest.pdb
