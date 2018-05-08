@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using OandaTest.Entity;
 using OandaTest.Entity.Order;
@@ -16,15 +17,31 @@ namespace OandaTest
         
         public static void Main (string[] args)
         {
-            var resultCreated = TestCreate ().GetAwaiter ().GetResult ();
-            var resultOrders = TestGetOrders ().GetAwaiter ().GetResult ();
-            var resultCancel = TestCancel (resultCreated.Id).GetAwaiter ().GetResult ();
-            resultOrders = TestGetOrders ().GetAwaiter ().GetResult ();
-            var resultGetorderCancelled = TestGetOrder (resultCreated.Id).GetAwaiter ().GetResult ();
+//            var resultCreated = TestCreate ().GetAwaiter ().GetResult ();
+//            var resultOrders = TestGetOrders ().GetAwaiter ().GetResult ();
+//            var resultCancel = TestCancel (resultCreated.Id).GetAwaiter ().GetResult ();
+//            resultOrders = TestGetOrders ().GetAwaiter ().GetResult ();
+//            var resultGetorderCancelled = TestGetOrder (resultCreated.Id).GetAwaiter ().GetResult ();
             
-            var resultBought = TestCreateWillBuy ().GetAwaiter ().GetResult ();
-            var resultGetOrder = TestGetOrder (resultBought.Id).GetAwaiter ().GetResult ();
+//            var resultBought = TestCreateWillBuy ().GetAwaiter ().GetResult ();
+//            var resultGetOrder = TestGetOrder (resultBought.Id).GetAwaiter ().GetResult ();
+
+            var asd = JsonConvert.SerializeObject (new PriceWrapper ()
+            {
+                Prices = new List<Price>
+                {
+                    new Price ()
+                    {
+                        Asks = new List<PriceQuotation> (),
+                        Bids = new List<PriceQuotation> ()
+                    }
+                }
+            });
             
+            var resultCandles = TestGetCandles (InstrumentName.EurCad).GetAwaiter ().GetResult ();
+
+            var instruments = new string[] {InstrumentName.EurCad, InstrumentName.EurUsd};
+            var resultPrices = TestGetCurrentPrices (instruments).GetAwaiter ().GetResult ();
             
             var asd4 = "";
         }
@@ -66,6 +83,16 @@ namespace OandaTest
         public static async Task<Order> TestGetOrder (string orderId)
         {
             return await repo.GetOrder (orderId);
+        }
+
+        public static async Task<IEnumerable<Candle>> TestGetCandles (string instrument)
+        {
+            return await repo.GetPrices (instrument);
+        }
+        
+        public static async Task<IEnumerable<Price>> TestGetCurrentPrices (string[] instruments)
+        {
+            return await repo.GetCurrentPrices (instruments);
         }
     }
 }

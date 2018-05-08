@@ -14,7 +14,7 @@ namespace OandaTest.Repository
 
         public RestClient ()
         {
-            m_client = new HttpClient {BaseAddress = new Uri ("https://api-fxpractice.oanda.com/v3/accounts/")};
+            m_client = new HttpClient {BaseAddress = new Uri ("https://api-fxpractice.oanda.com/v3/")};
             m_client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue
             (
                 "Bearer",

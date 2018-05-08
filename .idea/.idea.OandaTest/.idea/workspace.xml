@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa405f32-e975-4e82-8fe4-15e98eb47cf5" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/LimitOrderRequestRequest.cs" afterPath="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/LimitOrderRequest.cs" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/MarketOrderRequestRequest.cs" afterPath="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/MarketOrderRequest.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OandaTest/bin/Debug/OandaTest.exe" afterPath="$PROJECT_DIR$/OandaTest/bin/Debug/OandaTest.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OandaTest/bin/Debug/OandaTest.pdb" afterPath="$PROJECT_DIR$/OandaTest/bin/Debug/OandaTest.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OandaTest/obj/Debug/OandaTest.exe" afterPath="$PROJECT_DIR$/OandaTest/obj/Debug/OandaTest.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OandaTest/obj/Debug/OandaTest.pdb" afterPath="$PROJECT_DIR$/OandaTest/obj/Debug/OandaTest.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.OandaTest/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.OandaTest/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderRequest.cs" afterPath="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderRequest.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderResponse.cs" afterPath="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderResponse.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OandaTest/Constants.cs" afterPath="$PROJECT_DIR$/OandaTest/Constants.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderWrapper.cs" afterPath="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderWrapper.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OandaTest/OandaTest.csproj" afterPath="$PROJECT_DIR$/OandaTest/OandaTest.csproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OandaTest/Program.cs" afterPath="$PROJECT_DIR$/OandaTest/Program.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OandaTest/Repository/OrderRepository.cs" afterPath="$PROJECT_DIR$/OandaTest/Repository/OrderRepository.cs" />
@@ -29,18 +27,40 @@
       <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OandaTest/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="22" column="101" lean-forward="false" selection-start-line="22" selection-start-column="101" selection-end-line="22" selection-end-column="101" />
+            <state relative-caret-position="513">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
-                <marker date="1525799217742" expanded="false" signature="6:243" ph="..." />
-                <marker date="1525799217742" expanded="true" signature="264:2272" ph="{...}" />
-                <marker date="1525799217742" expanded="true" signature="293:2270" ph="{...}" />
-                <marker date="1525799217742" expanded="true" signature="435:1106" ph="{...}" />
-                <marker date="1525799217742" expanded="true" signature="1181:1474" ph="{...}" />
-                <marker date="1525799217742" expanded="true" signature="1545:1609" ph="{...}" />
-                <marker date="1525799217742" expanded="true" signature="1677:1750" ph="{...}" />
-                <marker date="1525799217742" expanded="true" signature="1832:2123" ph="{...}" />
-                <marker date="1525799217742" expanded="true" signature="2194:2264" ph="{...}" />
+                <marker date="1525808439037" expanded="false" signature="6:266" ph="..." />
+                <marker date="1525808439037" expanded="true" signature="287:3321" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="316:3319" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="458:1803" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="469:1080" ph="/* var resultCreated = TestCreate ().GetAwaiter ().GetResult (); ... */" />
+                <marker date="1525808439037" expanded="true" signature="1165:1453" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="1224:1439" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="1279:1421" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="1878:2171" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="2242:2306" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="2374:2447" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="2529:2820" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="2891:2961" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="3051:3125" ph="{...}" />
+                <marker date="1525808439037" expanded="true" signature="3231:3313" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Price.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OandaTest/Entity/Price.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding>
+                <marker date="1525808439017" expanded="true" signature="6:70" ph="..." />
+                <marker date="1525808439017" expanded="true" signature="98:796" ph="{...}" />
+                <marker date="1525808439017" expanded="true" signature="123:439" ph="{...}" />
+                <marker date="1525808439017" expanded="true" signature="472:614" ph="{...}" />
+                <marker date="1525808439017" expanded="true" signature="645:794" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -49,17 +69,85 @@
       <file leaf-file-name="OrderRepository.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OandaTest/Repository/OrderRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+            <state relative-caret-position="426">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding>
-                <marker date="1525798984674" expanded="false" signature="6:168" ph="..." />
-                <marker date="1525798984674" expanded="true" signature="200:1449" ph="{...}" />
-                <marker date="1525798984674" expanded="true" signature="235:1447" ph="{...}" />
-                <marker date="1525798984674" expanded="true" signature="322:384" ph="{...}" />
-                <marker date="1525798984674" expanded="true" signature="452:615" ph="{...}" />
-                <marker date="1525798984674" expanded="true" signature="696:887" ph="{...}" />
-                <marker date="1525798984674" expanded="true" signature="949:1199" ph="{...}" />
-                <marker date="1525798984674" expanded="true" signature="1259:1441" ph="{...}" />
+                <marker date="1525807766694" expanded="false" signature="6:187" ph="..." />
+                <marker date="1525807766694" expanded="true" signature="219:2889" ph="{...}" />
+                <marker date="1525807766694" expanded="true" signature="254:2887" ph="{...}" />
+                <marker date="1525807766694" expanded="true" signature="341:403" ph="{...}" />
+                <marker date="1525807766694" expanded="true" signature="471:643" ph="{...}" />
+                <marker date="1525807766694" expanded="true" signature="724:924" ph="{...}" />
+                <marker date="1525807766694" expanded="true" signature="986:1245" ph="{...}" />
+                <marker date="1525807766694" expanded="true" signature="1305:1489" ph="{...}" />
+                <marker date="1525807766694" expanded="true" signature="1632:2263" ph="{...}" />
+                <marker date="1525807766694" expanded="true" signature="1802:2130" ph="{...}" />
+                <marker date="1525807766694" expanded="true" signature="2350:2881" ph="{...}" />
+                <marker date="1525807766694" expanded="true" signature="2662:2738" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestClient.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OandaTest/Repository/RestClient.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <marker date="1525807608248" expanded="false" signature="6:163" ph="..." />
+                <marker date="1525807608248" expanded="true" signature="195:2217" ph="{...}" />
+                <marker date="1525807608248" expanded="true" signature="225:2215" ph="{...}" />
+                <marker date="1525807608248" expanded="true" signature="307:610" ph="{...}" />
+                <marker date="1525807608248" expanded="true" signature="709:856" ph="{...}" />
+                <marker date="1525807608248" expanded="true" signature="964:1140" ph="{...}" />
+                <marker date="1525807608248" expanded="true" signature="1255:1430" ph="{...}" />
+                <marker date="1525807608248" expanded="true" signature="1551:2033" ph="{...}" />
+                <marker date="1525807608248" expanded="true" signature="1686:1846" ph="{...}" />
+                <marker date="1525807608248" expanded="true" signature="1863:2023" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderWrapper.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderWrapper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <folding>
+                <marker date="1525804279003" expanded="true" signature="63:175" ph="{...}" />
+                <marker date="1525804279003" expanded="true" signature="95:173" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CandlesWrapper.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OandaTest/Entity/OrderRequest/CandlesWrapper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="31" />
+              <folding>
+                <marker date="1525804279039" expanded="true" signature="74:166" ph="{...}" />
+                <marker date="1525804279039" expanded="true" signature="108:164" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OandaTest/Constants.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+              <folding>
+                <marker date="1525803495696" expanded="true" signature="19:1076" ph="{...}" />
+                <marker date="1525803495696" expanded="true" signature="48:231" ph="{...}" />
+                <marker date="1525803495696" expanded="true" signature="263:367" ph="{...}" />
+                <marker date="1525803495696" expanded="true" signature="400:508" ph="{...}" />
+                <marker date="1525803495696" expanded="true" signature="538:833" ph="{...}" />
+                <marker date="1525803495696" expanded="true" signature="863:1074" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -85,6 +173,9 @@
     <setting file="file://$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderWrapper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/OandaTest/Repository/OrderRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/OandaTest/Repository/RestClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OandaTest/Entity/Price.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OandaTest/Entity/OrderRequest/CandlesWrapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OandaTest/Entity/Candle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/OandaTest/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -104,7 +195,6 @@
         <option value="$PROJECT_DIR$/OandaTest/Entity/Order/Order.cs" />
         <option value="$PROJECT_DIR$/OandaTest/Entity/OrdersList.cs" />
         <option value="$PROJECT_DIR$/OandaTest/Entity/Order/OrdersList.cs" />
-        <option value="$PROJECT_DIR$/OandaTest/Constants.cs" />
         <option value="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/MarketOrderRequestRequest.cs" />
         <option value="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/LimitOrderRequestRequest.cs" />
         <option value="$PROJECT_DIR$/OandaTest/Entity/Error.cs" />
@@ -115,11 +205,15 @@
         <option value="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/MarketOrderRequest.cs" />
         <option value="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/LimitOrderRequest.cs" />
         <option value="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderRequest.cs" />
-        <option value="$PROJECT_DIR$/OandaTest/Repository/RestClient.cs" />
         <option value="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderResponse.cs" />
+        <option value="$PROJECT_DIR$/OandaTest/Constants.cs" />
+        <option value="$PROJECT_DIR$/OandaTest/Entity/Candle.cs" />
+        <option value="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/CandlesWrapper.cs" />
         <option value="$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderWrapper.cs" />
+        <option value="$PROJECT_DIR$/OandaTest/Repository/RestClient.cs" />
         <option value="$PROJECT_DIR$/OandaTest/Repository/OrderRepository.cs" />
         <option value="$PROJECT_DIR$/OandaTest/Program.cs" />
+        <option value="$PROJECT_DIR$/OandaTest/Entity/Price.cs" />
       </list>
     </option>
   </component>
@@ -203,28 +297,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OandaTest (1 project)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OandaTest" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrderRequest" />
               <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,12 +403,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525785835260</updated>
-      <workItem from="1525785843831" duration="12852000" />
+      <workItem from="1525785843831" duration="18483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12852000" />
+    <option name="totallyTimeSpent" value="18483000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -349,7 +421,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -363,7 +434,7 @@
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34767836" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -406,36 +477,60 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/OandaTest/Program.cs</url>
-          <line>28</line>
-          <properties startOffset="1082" endOffset="1096" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/OandaTest/Program.cs</url>
-          <line>18</line>
-          <properties startOffset="458" endOffset="519" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
+          <line>19</line>
+          <properties startOffset="483" endOffset="544" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/OandaTest/Program.cs</url>
-          <line>19</line>
-          <properties startOffset="532" endOffset="595" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
+          <line>20</line>
+          <properties startOffset="559" endOffset="622" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/OandaTest/Program.cs</url>
-          <line>20</line>
-          <properties startOffset="608" endOffset="684" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
+          <line>21</line>
+          <properties startOffset="637" endOffset="713" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/OandaTest/Program.cs</url>
-          <line>21</line>
-          <properties startOffset="697" endOffset="756" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
+          <line>22</line>
+          <properties startOffset="728" endOffset="787" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OandaTest/Program.cs</url>
+          <line>25</line>
+          <properties startOffset="919" endOffset="986" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OandaTest/Program.cs</url>
+          <line>26</line>
+          <properties startOffset="1001" endOffset="1080" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OandaTest/Program.cs</url>
+          <line>45</line>
+          <properties startOffset="1779" endOffset="1793" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OandaTest/Program.cs</url>
+          <line>43</line>
+          <properties startOffset="1672" endOffset="1725" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OandaTest/Program.cs</url>
+          <line>40</line>
+          <properties startOffset="1481" endOffset="1567" documentPath="$PROJECT_DIR$/OandaTest/Program.cs" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -495,20 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OandaTest/Constants.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="true" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding>
-            <marker date="1525792802949" expanded="true" signature="19:835" ph="{...}" />
-            <marker date="1525792802949" expanded="true" signature="48:231" ph="{...}" />
-            <marker date="1525792802949" expanded="true" signature="263:367" ph="{...}" />
-            <marker date="1525792802949" expanded="true" signature="400:508" ph="{...}" />
-            <marker date="1525792802949" expanded="true" signature="538:833" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OandaTest/Entity/Error.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -552,36 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderWrapper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <marker date="1525798833162" expanded="true" signature="63:168" ph="{...}" />
-            <marker date="1525798833162" expanded="true" signature="98:166" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OandaTest/Repository/RestClient.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <marker date="1525798357734" expanded="false" signature="6:163" ph="..." />
-            <marker date="1525798357734" expanded="true" signature="195:2226" ph="{...}" />
-            <marker date="1525798357734" expanded="true" signature="225:2224" ph="{...}" />
-            <marker date="1525798357734" expanded="true" signature="307:619" ph="{...}" />
-            <marker date="1525798357734" expanded="true" signature="718:865" ph="{...}" />
-            <marker date="1525798357734" expanded="true" signature="973:1149" ph="{...}" />
-            <marker date="1525798357734" expanded="true" signature="1264:1439" ph="{...}" />
-            <marker date="1525798357734" expanded="true" signature="1560:2042" ph="{...}" />
-            <marker date="1525798357734" expanded="true" signature="1695:1855" ph="{...}" />
-            <marker date="1525798357734" expanded="true" signature="1872:2032" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderResponse.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -617,37 +668,130 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OandaTest/Entity/Candle.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1525804103387" expanded="true" signature="6:36" ph="..." />
+            <marker date="1525804103387" expanded="true" signature="64:675" ph="{...}" />
+            <marker date="1525804103387" expanded="true" signature="90:379" ph="{...}" />
+            <marker date="1525804103387" expanded="true" signature="410:673" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OandaTest/Entity/OrderRequest/CandlesWrapper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="31" />
+          <folding>
+            <marker date="1525804279039" expanded="true" signature="74:166" ph="{...}" />
+            <marker date="1525804279039" expanded="true" signature="108:164" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OandaTest/Constants.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+          <folding>
+            <marker date="1525803495696" expanded="true" signature="19:1076" ph="{...}" />
+            <marker date="1525803495696" expanded="true" signature="48:231" ph="{...}" />
+            <marker date="1525803495696" expanded="true" signature="263:367" ph="{...}" />
+            <marker date="1525803495696" expanded="true" signature="400:508" ph="{...}" />
+            <marker date="1525803495696" expanded="true" signature="538:833" ph="{...}" />
+            <marker date="1525803495696" expanded="true" signature="863:1074" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OandaTest/Entity/OrderRequest/OrderWrapper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <marker date="1525804279003" expanded="true" signature="63:175" ph="{...}" />
+            <marker date="1525804279003" expanded="true" signature="95:173" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OandaTest/Repository/OrderRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+        <state relative-caret-position="426">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
-            <marker date="1525798984674" expanded="false" signature="6:168" ph="..." />
-            <marker date="1525798984674" expanded="true" signature="200:1449" ph="{...}" />
-            <marker date="1525798984674" expanded="true" signature="235:1447" ph="{...}" />
-            <marker date="1525798984674" expanded="true" signature="322:384" ph="{...}" />
-            <marker date="1525798984674" expanded="true" signature="452:615" ph="{...}" />
-            <marker date="1525798984674" expanded="true" signature="696:887" ph="{...}" />
-            <marker date="1525798984674" expanded="true" signature="949:1199" ph="{...}" />
-            <marker date="1525798984674" expanded="true" signature="1259:1441" ph="{...}" />
+            <marker date="1525807766694" expanded="false" signature="6:187" ph="..." />
+            <marker date="1525807766694" expanded="true" signature="219:2889" ph="{...}" />
+            <marker date="1525807766694" expanded="true" signature="254:2887" ph="{...}" />
+            <marker date="1525807766694" expanded="true" signature="341:403" ph="{...}" />
+            <marker date="1525807766694" expanded="true" signature="471:643" ph="{...}" />
+            <marker date="1525807766694" expanded="true" signature="724:924" ph="{...}" />
+            <marker date="1525807766694" expanded="true" signature="986:1245" ph="{...}" />
+            <marker date="1525807766694" expanded="true" signature="1305:1489" ph="{...}" />
+            <marker date="1525807766694" expanded="true" signature="1632:2263" ph="{...}" />
+            <marker date="1525807766694" expanded="true" signature="1802:2130" ph="{...}" />
+            <marker date="1525807766694" expanded="true" signature="2350:2881" ph="{...}" />
+            <marker date="1525807766694" expanded="true" signature="2662:2738" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OandaTest/Repository/RestClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1525807608248" expanded="false" signature="6:163" ph="..." />
+            <marker date="1525807608248" expanded="true" signature="195:2217" ph="{...}" />
+            <marker date="1525807608248" expanded="true" signature="225:2215" ph="{...}" />
+            <marker date="1525807608248" expanded="true" signature="307:610" ph="{...}" />
+            <marker date="1525807608248" expanded="true" signature="709:856" ph="{...}" />
+            <marker date="1525807608248" expanded="true" signature="964:1140" ph="{...}" />
+            <marker date="1525807608248" expanded="true" signature="1255:1430" ph="{...}" />
+            <marker date="1525807608248" expanded="true" signature="1551:2033" ph="{...}" />
+            <marker date="1525807608248" expanded="true" signature="1686:1846" ph="{...}" />
+            <marker date="1525807608248" expanded="true" signature="1863:2023" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OandaTest/Entity/Price.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <marker date="1525808439017" expanded="true" signature="6:70" ph="..." />
+            <marker date="1525808439017" expanded="true" signature="98:796" ph="{...}" />
+            <marker date="1525808439017" expanded="true" signature="123:439" ph="{...}" />
+            <marker date="1525808439017" expanded="true" signature="472:614" ph="{...}" />
+            <marker date="1525808439017" expanded="true" signature="645:794" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OandaTest/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="22" column="101" lean-forward="false" selection-start-line="22" selection-start-column="101" selection-end-line="22" selection-end-column="101" />
+        <state relative-caret-position="513">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
-            <marker date="1525799217742" expanded="false" signature="6:243" ph="..." />
-            <marker date="1525799217742" expanded="true" signature="264:2272" ph="{...}" />
-            <marker date="1525799217742" expanded="true" signature="293:2270" ph="{...}" />
-            <marker date="1525799217742" expanded="true" signature="435:1106" ph="{...}" />
-            <marker date="1525799217742" expanded="true" signature="1181:1474" ph="{...}" />
-            <marker date="1525799217742" expanded="true" signature="1545:1609" ph="{...}" />
-            <marker date="1525799217742" expanded="true" signature="1677:1750" ph="{...}" />
-            <marker date="1525799217742" expanded="true" signature="1832:2123" ph="{...}" />
-            <marker date="1525799217742" expanded="true" signature="2194:2264" ph="{...}" />
+            <marker date="1525808439037" expanded="false" signature="6:266" ph="..." />
+            <marker date="1525808439037" expanded="true" signature="287:3321" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="316:3319" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="458:1803" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="469:1080" ph="/* var resultCreated = TestCreate ().GetAwaiter ().GetResult (); ... */" />
+            <marker date="1525808439037" expanded="true" signature="1165:1453" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="1224:1439" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="1279:1421" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="1878:2171" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="2242:2306" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="2374:2447" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="2529:2820" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="2891:2961" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="3051:3125" ph="{...}" />
+            <marker date="1525808439037" expanded="true" signature="3231:3313" ph="{...}" />
           </folding>
         </state>
       </provider>

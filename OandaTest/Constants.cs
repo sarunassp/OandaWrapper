@@ -26,4 +26,12 @@
         public const string FilledOrKilled = "FOK";
         public const string ImmediatedlyPartiallyFilledOrCancelled = "IOC";
     }
+
+    public class Granularity
+    {
+        public const string FiveSecond = "S5";
+        public const string TenSecond = "S10";
+        public const string FifteenSecond = "S15";
+        public const string ThirtySecond = "S30";    
+    }
 }

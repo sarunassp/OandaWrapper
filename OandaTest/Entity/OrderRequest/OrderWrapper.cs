@@ -2,9 +2,9 @@
 
 namespace OandaTest.Entity.OrderRequest
 {
-    public class OrderWrapper<T>
+    public class OrderWrapper
     {
         [JsonProperty("order")]
-        public T Order;
+        public Order.Order Order;
     }
 }
