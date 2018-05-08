@@ -4,12 +4,12 @@ using Newtonsoft.Json;
 
 namespace OandaTest.Entity.OrderRequest
 {
-    public class MarketOrderRequestRequest : OrderRequest
+    public class MarketOrderRequest : OrderRequest
     {
         [JsonProperty ("timeInForce")]
         public DateTime TimeInForce { get; }
 
-        public MarketOrderRequestRequest
+        public MarketOrderRequest
         (
             string instrument,
             uint units,

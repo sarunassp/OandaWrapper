@@ -48,10 +48,11 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Entity\Error.cs" />
     <Compile Include="Entity\OrderCancel.cs" />
-    <Compile Include="Entity\OrderRequest\LimitOrderRequestRequest.cs" />
-    <Compile Include="Entity\OrderRequest\MarketOrderRequestRequest.cs" />
+    <Compile Include="Entity\OrderRequest\LimitOrderRequest.cs" />
+    <Compile Include="Entity\OrderRequest\MarketOrderRequest.cs" />
     <Compile Include="Entity\OrderRequest\OrderRequest.cs" />
     <Compile Include="Entity\OrderRequest\OrderResponse.cs" />
+    <Compile Include="Entity\OrderRequest\OrderWrapper.cs" />
     <Compile Include="Entity\Order\LimitOrder.cs" />
     <Compile Include="Entity\Order\MarketOrder.cs" />
     <Compile Include="Entity\Order\Order.cs" />

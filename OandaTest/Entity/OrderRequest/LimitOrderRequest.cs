@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace OandaTest.Entity.OrderRequest
 {
-    public class LimitOrderRequestRequest : OrderRequest
+    public class LimitOrderRequest : OrderRequest
     {
         [JsonProperty ("price")]
         public string Price;
@@ -12,7 +12,7 @@ namespace OandaTest.Entity.OrderRequest
         [JsonProperty ("timeInOrder")]
         public DateTime TimeInOrder;
         
-        public LimitOrderRequestRequest
+        public LimitOrderRequest
         (
             string instrument,
             uint units,

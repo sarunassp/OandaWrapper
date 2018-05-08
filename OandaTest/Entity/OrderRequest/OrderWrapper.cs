@@ -2,9 +2,9 @@
 
 namespace OandaTest.Entity.OrderRequest
 {
-    public class OrderResponse<T> where T: OrderRequest
+    public class OrderWrapper<T>
     {
-        [JsonProperty("orderCreateTransaction")]
+        [JsonProperty("order")]
         public T Order;
     }
 }

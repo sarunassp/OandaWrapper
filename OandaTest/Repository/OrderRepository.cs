@@ -18,23 +18,29 @@ namespace OandaTest.Repository
         
         public async Task<IEnumerable<Order>> GetOrders ()
         {
-            var result = await m_client.GetAsync<OrdersList, Error> (new Uri ($"{Constants.AccountId}/orders"));
+            var result = await m_client.GetAsync<OrdersList, Error> ($"{Constants.AccountId}/orders");
             return result.Item1.Orders;
         }
-
+    
         public async Task<T> CreateOrder<T> (T order) where T: OrderRequest
         {
-            var result = await m_client.PostAsync <OrderResponse<T>, Error> (new Uri ($"{Constants.AccountId}/orders"), order);
+            var result = await m_client.PostAsync <OrderResponse<T>, Error> ($"{Constants.AccountId}/orders", new {order = order});
             return result.Item1.Order;
         }
 
-        public async Task<bool> CancelOrder (int orderId)
+        public async Task<bool> CancelOrder (string orderId)
         {
-            var result = await m_client.PostAsync <object, Error> (new Uri ($"{Constants.AccountId}/orders/{orderId}/cancel"), null);
+            var result = await m_client.PostAsync <object, Error> ($"{Constants.AccountId}/orders/{orderId}/cancel", null);
             if (result.Item1 != null)
                 return true;
             
             return false;
+        }
+
+        public async Task<Order> GetOrder (string orderId)
+        {
+            var result = await m_client.GetAsync <OrderWrapper<Order>, Error> ($"{Constants.AccountId}/orders/{orderId}");
+            return result.Item1.Order;
         }
     }
 }

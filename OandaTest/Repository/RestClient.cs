@@ -22,19 +22,19 @@ namespace OandaTest.Repository
             );
         }
         
-        public async Task<Tuple<TSuccess, TFail>> GetAsync<TSuccess, TFail> (Uri path)
+        public async Task<Tuple<TSuccess, TFail>> GetAsync<TSuccess, TFail> (string path)
         {
             var response = await m_client.GetAsync (path);
             return await ParseResponse<TSuccess, TFail> (response);
         }
 
-        public async Task<Tuple<TSuccess, TFail>> PostAsync<TSuccess, TFail> (Uri path, object payload)
+        public async Task<Tuple<TSuccess, TFail>> PostAsync<TSuccess, TFail> (string path, object payload)
         {
             var response = await m_client.PostAsync (path, GetStringContent (payload));
             return await ParseResponse<TSuccess, TFail> (response);
         }
         
-        public async Task<Tuple<TSuccess, TFail>> PutAsync<TSuccess, TFail> (Uri path, object payload)
+        public async Task<Tuple<TSuccess, TFail>> PutAsync<TSuccess, TFail> (string path, object payload)
         {
             var response = await m_client.PutAsync (path, GetStringContent (payload));
             return await ParseResponse<TSuccess, TFail> (response);

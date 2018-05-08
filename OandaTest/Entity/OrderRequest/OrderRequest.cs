@@ -12,5 +12,8 @@ namespace OandaTest.Entity.OrderRequest
         
         [JsonProperty("units")]
         public string Units;
+        
+        [JsonProperty("id")]
+        public string Id;
     }
 }
